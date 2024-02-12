@@ -27,7 +27,7 @@ if awesome.startup_errors then
                      text = awesome.startup_errors })
 end
 
--- Handle wruntime errors after startup
+-- Handle runtime errors after startup
 do
     local in_error = false
     awesome.connect_signal("debug::error", function (err)
